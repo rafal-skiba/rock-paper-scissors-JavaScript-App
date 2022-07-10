@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --color-points: hsl(229, 25%, 31%);
+    --color-score: hsl(229, 64%, 46%);
+    ---color-border: hsl(217, 16%, 45%);
+    --main-color: #fff;
+    --color-scissors: hsl(39, 89%, 49%);
+    --color-paper: hsl(230, 89%, 62%);    
+    --color-rock: hsl(349, 71%, 52%);
+}
+
+
+
+
+
+body {
+    background: radial-gradient(at top, hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    min-width: 100vh;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+header {
+    border: solid 2px var(---color-border);
+    border-radius: 6px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 10px auto;
+    
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+h1 span {
+    display: block;
+    line-height: 28px;
+}
+
+.divScore {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    border-radius: 10px;
+
+}
+
+.divScore span {
+    color: var(--color-score);
+}
+
+.points {
+    color: var(--color-points);
+    font-size: 50px;
+    line-height: 50px;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 100px 0px;
+}
+
+.options {
+    aspect-ratio: 313/278;
+    background-image: url("./images/bg-triangle.svg");
+    width: 50%;
+    background-size: cover;
+    margin: 10px auto;
+    position: relative;
+   
+}
+
+.button {
+ position: absolute;
+ aspect-ratio: 1/1;
+ width: 50%;
+ border-radius: 50%;
+ cursor: pointer;
+
+}
+
+.button img {
+    width: 50%;
+}
+
+.button--paper {
+    left:0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border: solid 10px var(--color-paper);
+}
+
+.button--scissors {
+    right:0;
+    top: 0;
+    transform: translate(50%, -50%);
+    border: solid 10px var(--color-scissors);
+}
+
+.button--rock {
+    bottom:0;
+   left: 50%;
+   transform: translate(-50%, 50%);
+   border: solid 10px var(--color-rock);
+}
