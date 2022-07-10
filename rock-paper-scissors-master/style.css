@@ -84,7 +84,7 @@ main {
    
 }
 
-.button {
+.options .button {
  position: absolute;
  aspect-ratio: 1/1;
  width: 50%;
@@ -93,27 +93,100 @@ main {
 
 }
 
-.button img {
+.options .button img {
     width: 50%;
 }
 
-.button--paper {
+.options .button--paper {
     left:0;
     top: 0;
     transform: translate(-50%, -50%);
     border: solid 10px var(--color-paper);
 }
 
-.button--scissors {
+.options .button--scissors {
     right:0;
     top: 0;
     transform: translate(50%, -50%);
     border: solid 10px var(--color-scissors);
 }
 
-.button--rock {
+.options .button--rock {
     bottom:0;
    left: 50%;
    transform: translate(-50%, 50%);
    border: solid 10px var(--color-rock);
 }
+
+
+
+
+
+.button--paper {
+   
+    border: solid 10px var(--color-paper);
+}
+
+.button--scissors {
+
+    border: solid 10px var(--color-scissors);
+}
+
+.button--rock {
+
+   border: solid 10px var(--color-rock);
+}
+
+.fight {
+    color: var(--main-color);
+    display: flex;
+}
+
+.fight .button {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 70%;
+    align-self: center;
+
+}
+
+.fight .button img {
+    width: 50%;
+}
+
+.fight__title {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 26px;
+ 
+}
+
+.pick {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+
+.pick__title {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 26px;
+   
+}
+
+.pick__placeholder {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.30);
+    display: flex;
+    justify-content: center;
+    
+}
+
