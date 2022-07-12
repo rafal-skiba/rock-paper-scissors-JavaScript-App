@@ -1,84 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>
-      <span>ROCK</span>
-      <span>PAPER</span>
-      <span>SCISSORS</span>
-    </h1>
-    <div class="divScore">
-      <span>SCORE</span>
-      <strong class="points">12</strong>
-    </div>
-  </header>
-  <main>
-    <!-- <section class="options">
-        <button class="button button--paper">
+  <body>
+    <header>
+      <h1>
+        <span>ROCK</span>
+        <span>PAPER</span>
+        <span>SCISSORS</span>
+      </h1>
+      <div class="divScore">
+        <span>SCORE</span>
+        <strong class="points">12</strong>
+      </div>
+    </header>
+    <main>
+      <section class="options">
+        <button class="button button--paper" data-pick="paper">
           <img src="images/icon-paper.svg" alt="paper" />
         </button>
-        <button class="button button--scissors">
+        <button class="button button--scissors" data-pick="scissors">
           <img src="images/icon-scissors.svg" alt="scissors" />
         </button>
-        <button class="button button--rock">
+        <button class="button button--rock" data-pick="rock">
           <img src="images/icon-rock.svg" alt="rock" />
-        </button> -->
-    </section>
+        </button>
+      </section>
 
-    <section class="fight">
-      <div class="pick">
-        <span class="fight__title">YOU PICKED</span>
-        <div>
-          <button class="button button--scissors">
-            <img src="images/icon-scissors.svg" alt="paper" />
-          </button>
+      <!-- <section class="fight">
+        <div class="pick">
+          <span class="fight__title">YOU PICKED</span>
+          <div>
+            <button class="button button--scissors">
+              <img src="images/icon-scissors.svg" alt="paper" />
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="pick">
-        <span class="pick__title">HOUSSE PICKED</span>
-        <div class="pick__placeholder">
-          <button class="button button--scissors">
-            <img src="images/icon-scissors.svg" alt="paper" />
-          </button>
+        <div class="pick">
+          <span class="pick__title">HOUSSE PICKED</span>
+          <div class="pick__placeholder">
+            <button class="button button--scissors">
+              <img src="images/icon-scissors.svg" alt="paper" />
+            </button>
+          </div>
         </div>
-      </div>
+      </section> -->
+    </main>
 
-    </section>
-  </main>
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
