@@ -41,7 +41,7 @@
         <span>PAPER</span>
         <span>SCISSORS</span>
       </h1>
-      <div class="divScore">
+      <div class="score">
         <span>SCORE</span>
         <strong class="points">12</strong>
       </div>
@@ -49,37 +49,38 @@
     <main>
       <section class="options">
         <button class="button button--paper" data-pick="paper">
-          <img src="images/icon-paper.svg" alt="paper" />
+          <div class="button__image-container">
+            <img src="./images/icon-paper.svg" alt="Paper" />
+          </div>
         </button>
         <button class="button button--scissors" data-pick="scissors">
-          <img src="images/icon-scissors.svg" alt="scissors" />
+          <div class="button__image-container">
+            <img src="./images/icon-scissors.svg" alt="Scissors" />
+          </div>
         </button>
         <button class="button button--rock" data-pick="rock">
-          <img src="images/icon-rock.svg" alt="rock" />
+          <div class="button__image-container">
+            <img src="./images/icon-rock.svg" alt="Rock" />
+          </div>
         </button>
       </section>
-
-      <!-- <section class="fight">
-        <div class="pick">
-          <span class="fight__title">YOU PICKED</span>
-          <div>
-            <button class="button button--scissors">
-              <img src="images/icon-scissors.svg" alt="paper" />
-            </button>
+      <section class="fight">
+        <div class="pick pick--player">
+          <span class="pick__title">YOU PICKED</span>
+          <div class="pick__container pick__container--player">
+            <div class="button button--paper">
+              <div class="button__image-container">
+                <img src="./images/icon-paper.svg" alt="Paper" />
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="pick">
-          <span class="pick__title">HOUSSE PICKED</span>
-          <div class="pick__placeholder">
-            <button class="button button--scissors">
-              <img src="images/icon-scissors.svg" alt="paper" />
-            </button>
-          </div>
+        <div class="pick pick--ai">
+          <span class="pick__title">THE COMUPTER PICKED</span>
+          <div class="pick__container pick__container--ai"></div>
         </div>
-      </section> -->
+      </section>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>
