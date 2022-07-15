@@ -75,7 +75,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 0.3s, opacity 0.3s;
+    transition: ease 0.6s, opacity 0.6s;
 }
 
 .options {
@@ -237,4 +237,30 @@ section {
     border-radius: 3px;
     color: hsl(349, 71%, 52%);
     padding: 8px 24px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+}
+
+
+.result__text {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.result__button {
+    border: none;
+    border-radius: 3px;
+    color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    font-weight: 900;
 }
